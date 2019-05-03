@@ -1,0 +1,43 @@
+.dbox-content{
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    &__close{
+        background: #f00;
+        height: 36px;
+        width: 36px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.5);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &__substrate{
+        background: #ffffff;
+        box-shadow: 0 0 100px rgba(0,0,0,.1);
+        padding: 60px;
+        position: relative;
+    }
+
+    &__overflow{
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: calc(100vh - 200px);
+    }
+
+}
